@@ -1,0 +1,267 @@
+body {
+    background-image: url('bg1.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(232, 233, 254, 0.8);
+    border: 2px solid navy;
+}
+.logo-menu {
+    display: flex;
+	align-items: center;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    border: 2px solid navy;
+    margin-left: 20px;
+    margin-right: 300px;
+	background-color: rgb(255,255,255);
+}
+
+.menu li {
+    margin-right: 20px;
+    border-left: 1px solid navy;
+	display:flex;
+	align-items:center;
+}
+
+.menu li:first-child {
+    border-left: none;
+    display:flex;
+	align-items:center;	
+}
+
+.menu li a {
+	display:flex;
+	align-items:center;
+    text-decoration: none;
+    color: #333;
+}
+.social-container {
+    display: flex;
+    align-items: center;
+}
+
+.social-icon {
+    width: 30px; 
+    height: 30px; 
+    margin-right: 7.5px;
+    background: url('social-icons-sprite.png') no-repeat;
+    display: inline-block;
+}
+
+.facebook-icon {
+    background-position:-27px -19px;
+	width: 36px;
+	height: 35px;
+}
+
+.twitter-icon {
+    background-position: -69px -19px;
+	width: 35px;
+	height: 35px;
+}
+
+.instagram-icon {
+    background-position: -109px -17px;
+	width: 38px;
+	height: 37px;
+}
+
+.social-icon:hover {
+    opacity: 0.7; /* Adjust the opacity as needed */
+    transition: opacity 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    margin-left: 10px; 
+}
+
+.subscribe-container {
+	display:flex;
+	align-items:center;
+    border: 2px solid navy;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.news {
+    width: 15px; 
+    height: 15px; 
+
+}
+
+.letter {
+    width: 30px; 
+    height: 30px; 
+    margin-right: 7.5px;
+	margin-left:9px;
+}
+
+.subscribe {
+    text-decoration: none;
+    color: #333;
+	align-items:center;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    border: 2px solid navy;
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+	margin-left: 100px;
+}
+
+.search-button {
+    background-color: navy;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#header-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+	font-weight: bold;
+    text-align: center;
+    border: 1px solid navy;
+	background-image: url('bg2.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    padding: 20px;
+	color: rgb(0,0,0);
+    border-radius: 5px;
+}
+#website-borders {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.website {
+    border: 2px solid navy;
+    padding: 20px;
+    width: 25%; /* Adjust the width as needed */
+    text-align: center;
+    box-sizing: border-box;
+	background-color: rgba(173,216,230,0.7);
+}
+
+.website h2 {
+    font-size: 18px;
+    font-family: 'Pacifico', cursive;
+    color: #333;
+    text-transform: uppercase;
+}
+
+
+.website img {
+    max-width: 100%;
+    max-height: 30%;
+    margin: 10px 0;
+}
+
+.website p {
+    font-size: 16px;
+    color: #333;
+}
+
+.website .click-here {
+            background-color: navy;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: underline;
+            transition: background-color 0.3s ease-in-out; /* Add a smooth transition effect */
+        }
+
+.website button:hover {
+    background-color: rgb(255, 182, 193);
+}
+
+#description { 
+    padding: 10px; 
+    margin: 20px 0; 
+    text-align: left;
+	color:white;
+	
+}
+
+#global-menu {
+         display: flex;
+         justify-content: flex-start; 
+         align-items: center;
+         margin: 0px 0;
+         padding: 0px;
+         position: fixed; 
+         bottom: 0px; 
+         left: 20px; 
+        }
+
+        #global-menu ul {
+         list-style: none;
+         padding: 0;
+         display: flex;
+		 background-color:white;
+        }
+
+#global-menu li {
+    margin-right: 0px;
+}
+
+#global-menu a {
+    text-decoration: none;
+    color: #333;
+    border: 1px solid navy;
+    padding: 0px 0px;
+    border-radius: 0px;
+}
+
+#global-menu a:hover {
+    background-color: navy;
+    color: #fff;
+}
+.floating:hover {
+    border-radius: 50%;
+    animation: floatAnimation 3s infinite ease-in-out;
+}
+
+@keyframes floatAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px); 
+    }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="logo-menu">
+            <img id="logo" src="logo.png" width="65px" height="65px">
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="social-container">
+            <a href="https://www.facebook.com/yessamaye/" target="_blank">
+                <div class="social-icon facebook-icon"></div>
+            </a>
+            <a href="https://twitter.com/yin_yei" target="_blank">
+                <div class="social-icon twitter-icon"></div>
+            </a>
+            <a href="https://www.instagram.com/yessamaye/" target="_blank">
+                <div class="social-icon instagram-icon"></div>
+            </a>
+
+            <div class="newsletter">
+                <div class="subscribe-container">
+                    <a href="#"><img src="newsletter.png" alt="News" class="news"></a>
+                    <a href="#" class="subscribe">Subscribe</a>
+                </div>
+            </div>
+            <div class="others">
+                <!-- Trigger the login form when the user clicks on the user icon -->
+                <a href="log-in.html" onclick="showLoginModal();">
+                    <img src="user-icon.png" alt="User Icon" class="letter">
+                </a>
+            </div>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Type here">
+                <button class="search-button">Search</button>
+            </div>
+        </div>
+    </div>
+    <div id="header-title">A Student's Sorcery Secret</div>
+    <div id="website-borders">
+        <div class="website">
+            <h2>Tips on How You Succeed!</h2>
+            <img src="website 1.png" alt="Website 1">
+            <p>Getting tired of bad grades? Come & discover the keys for success.  </p>
+            <a href="website_1.html">
+                <button class="click-here">Click Here</button>
+            </a>
+        </div>
+        
+        <div class="website">
+            <h2>Time Management & How to Reduce Stress</h2>
+            <img src="website 2.png" alt="Website 2">
+            <p>Your journey awaits, get started!</p>
+			<a href="website_2.html">
+                <button class="click-here">Click Here</button>
+			</a>
+        </div>
+
+        <div class="website">
+            <h2>Effective Study Techniques</h2>
+            <img src="website 3.png" alt="Website 3">
+            <p>Want to boost your academic study techniques? What are you waiting for?</p>
+            <a href="website_3.html">
+                <button class="click-here">Click Here</button>
+			</a>
+        </div>
+    </div>
+    <div id="global-menu">
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script>
+        // JavaScript functions to show and close the login modal
+        function showLoginModal() {
+            document.getElementById('login-modal').style.display = 'block';
+        }
+
+        function closeLoginModal() {
+            document.getElementById('login-modal').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
